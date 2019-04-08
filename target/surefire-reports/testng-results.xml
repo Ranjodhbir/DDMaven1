@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="4" total="11" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="581" started-at="2019-04-08T06:13:14Z" finished-at="2019-04-08T06:13:15Z">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="581" started-at="2019-04-08T06:13:14Z" finished-at="2019-04-08T06:13:15Z">
+      <class name="base.TestBase">
+        <test-method status="PASS" signature="setup()[pri:0, instance:base.TestBase@59494225]" name="setup" is-config="true" duration-ms="5620" started-at="2019-04-08T11:43:08Z" finished-at="2019-04-08T11:43:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:base.TestBase@59494225]" name="tearDown" is-config="true" duration-ms="602" started-at="2019-04-08T11:43:15Z" finished-at="2019-04-08T11:43:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- base.TestBase -->
+      <class name="testcases.AddCustomerTest">
+        <test-method status="PASS" signature="getData(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.AddCustomerTest@6e1567f1]" name="getData" duration-ms="0" started-at="2019-04-08T11:43:15Z" data-provider="a" finished-at="2019-04-08T11:43:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[fname]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[lname]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[pcode]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getData -->
+        <test-method status="PASS" signature="getData(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.AddCustomerTest@6e1567f1]" name="getData" duration-ms="0" started-at="2019-04-08T11:43:15Z" data-provider="a" finished-at="2019-04-08T11:43:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getData -->
+        <test-method status="PASS" signature="getData(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.AddCustomerTest@6e1567f1]" name="getData" duration-ms="0" started-at="2019-04-08T11:43:15Z" data-provider="a" finished-at="2019-04-08T11:43:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[5.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[4.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getData -->
+      </class> <!-- testcases.AddCustomerTest -->
+      <class name="testcases.TestCase1">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:testcases.TestCase1@cb644e]" name="beforeTest" duration-ms="0" started-at="2019-04-08T11:43:14Z" finished-at="2019-04-08T11:43:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="b()[pri:0, instance:testcases.TestCase1@cb644e]" name="b" duration-ms="0" started-at="2019-04-08T11:43:14Z" finished-at="2019-04-08T11:43:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- b -->
+        <test-method status="PASS" signature="f()[pri:0, instance:testcases.TestCase1@cb644e]" name="f" duration-ms="0" started-at="2019-04-08T11:43:14Z" finished-at="2019-04-08T11:43:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+      </class> <!-- testcases.TestCase1 -->
+      <class name="testcases.LoginTest">
+        <test-method status="PASS" signature="login()[pri:0, instance:testcases.LoginTest@5cb9f472]" name="login" duration-ms="27" started-at="2019-04-08T11:43:14Z" finished-at="2019-04-08T11:43:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- testcases.LoginTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

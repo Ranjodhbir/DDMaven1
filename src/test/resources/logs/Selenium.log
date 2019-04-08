@@ -1,0 +1,6 @@
+11:43:08,940 DEBUG devpinoyLogger<strong>{1}</strong>:54 - Config properties loaded
+11:43:08,941 DEBUG devpinoyLogger<strong>{1}</strong>:70 - Or properties loaded
+11:43:11,490 DEBUG devpinoyLogger<strong>{1}</strong>:82 - Chrome Browser Open
+11:43:14,529 DEBUG devpinoyLogger<strong>{1}</strong>:31 - file path added
+11:43:14,564 DEBUG devpinoyLogger<strong>{1}</strong>:25 - click method works
+11:43:15,720 DEBUG devpinoyLogger<strong>{1}</strong>:104 - browser closed
