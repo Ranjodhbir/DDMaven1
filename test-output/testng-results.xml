@@ -2,45 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Learning Test" duration-ms="593" started-at="2019-04-08T05:37:10Z" finished-at="2019-04-08T05:37:11Z">
+  <suite name="Learning Test" duration-ms="81914" started-at="2019-04-12T07:03:39Z" finished-at="2019-04-12T07:05:01Z">
     <groups>
     </groups>
-    <test name="Login Test" duration-ms="61" started-at="2019-04-08T05:37:10Z" finished-at="2019-04-08T05:37:10Z">
+    <test name="Login Test" duration-ms="91" started-at="2019-04-12T07:03:39Z" finished-at="2019-04-12T07:03:39Z">
       <class name="testcases.LoginTest">
-        <test-method status="PASS" signature="login()[pri:0, instance:testcases.LoginTest@57536d79]" name="login" duration-ms="32" started-at="2019-04-08T11:07:10Z" finished-at="2019-04-08T11:07:10Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:testcases.LoginTest@27a8c74e]" name="login" duration-ms="81" started-at="2019-04-12T12:33:39Z" finished-at="2019-04-12T12:33:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
       </class> <!-- testcases.LoginTest -->
     </test> <!-- Login Test -->
-    <test name="AddCustomer Test" duration-ms="508" started-at="2019-04-08T05:37:10Z" finished-at="2019-04-08T05:37:11Z">
+    <test name="AddCustomer Test" duration-ms="923" started-at="2019-04-12T07:03:39Z" finished-at="2019-04-12T07:03:40Z">
       <class name="testcases.AddCustomerTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.AddCustomerTest@35d176f7]" name="setup" is-config="true" duration-ms="5356" started-at="2019-04-08T11:07:05Z" finished-at="2019-04-08T11:07:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getData(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.AddCustomerTest@35d176f7]" name="getData" duration-ms="8" started-at="2019-04-08T11:07:11Z" data-provider="a" finished-at="2019-04-08T11:07:11Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[fname]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[lname]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[pcode]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getData -->
-        <test-method status="PASS" signature="getData(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.AddCustomerTest@35d176f7]" name="getData" duration-ms="0" started-at="2019-04-08T11:07:11Z" data-provider="a" finished-at="2019-04-08T11:07:11Z">
+        <test-method status="PASS" signature="getData(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.AddCustomerTest@80503]" name="getData" duration-ms="352" started-at="2019-04-12T12:33:40Z" data-provider="a" finished-at="2019-04-12T12:33:40Z">
           <params>
             <param index="0">
               <value>
@@ -57,36 +32,59 @@
                 <![CDATA[3.0]]>
               </value>
             </param>
+            <param index="3">
+              <value>
+                <![CDATA[Customer added successfully]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getData -->
-        <test-method status="PASS" signature="getData(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.AddCustomerTest@35d176f7]" name="getData" duration-ms="0" started-at="2019-04-08T11:07:11Z" data-provider="a" finished-at="2019-04-08T11:07:11Z">
+      </class> <!-- testcases.AddCustomerTest -->
+    </test> <!-- AddCustomer Test -->
+    <test name="openAccount Test" duration-ms="40437" started-at="2019-04-12T07:03:40Z" finished-at="2019-04-12T07:04:20Z">
+      <class name="testcases.OpenAccount1Test">
+        <test-method status="PASS" signature="getData(java.lang.String, java.lang.String)[pri:0, instance:testcases.OpenAccount1Test@3cb1ffe6]" name="getData" duration-ms="40390" started-at="2019-04-12T12:33:40Z" data-provider="a" finished-at="2019-04-12T12:34:20Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[6.0]]>
+                <![CDATA[Manvir singh]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[5.0]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[4.0]]>
+                <![CDATA[Dollar]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getData -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.AddCustomerTest@35d176f7]" name="tearDown" is-config="true" duration-ms="619" started-at="2019-04-08T11:07:11Z" finished-at="2019-04-08T11:07:11Z">
+      </class> <!-- testcases.OpenAccount1Test -->
+    </test> <!-- openAccount Test -->
+    <test name="CustomerLogin Test" duration-ms="40394" started-at="2019-04-12T07:04:20Z" finished-at="2019-04-12T07:05:01Z">
+      <class name="testcases.CustomerLoginTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.CustomerLoginTest@6f195bc3]" name="setup" is-config="true" duration-ms="4833" started-at="2019-04-12T12:33:34Z" finished-at="2019-04-12T12:33:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="customerLogin(java.lang.String)[pri:0, instance:testcases.CustomerLoginTest@6f195bc3]" name="customerLogin" duration-ms="40350" started-at="2019-04-12T12:34:20Z" data-provider="a" finished-at="2019-04-12T12:35:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Manvir singh]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customerLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.CustomerLoginTest@6f195bc3]" name="tearDown" is-config="true" duration-ms="601" started-at="2019-04-12T12:35:01Z" finished-at="2019-04-12T12:35:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testcases.AddCustomerTest -->
-    </test> <!-- AddCustomer Test -->
+      </class> <!-- testcases.CustomerLoginTest -->
+    </test> <!-- CustomerLogin Test -->
   </suite> <!-- Learning Test -->
 </testng-results>

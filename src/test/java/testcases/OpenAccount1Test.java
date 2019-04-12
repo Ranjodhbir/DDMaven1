@@ -2,26 +2,18 @@ package testcases;
 
 import java.io.File;
 import java.io.FileInputStream;
-//import jxl.Workbook;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import base.TestBase;
 
-public class AddCustomerTest extends TestBase
-
+public class OpenAccount1Test extends TestBase
 {
-	
 	public static FileInputStream fis;
 	public static XSSFWorkbook wb;
 	public static File src;
@@ -48,7 +40,7 @@ public class AddCustomerTest extends TestBase
 	}
 	   System.out.println("workbook added");
 	   
-	   XSSFSheet sheet=wb.getSheet("Sheet1");
+	   XSSFSheet sheet=wb.getSheet("Sheet2");
 	   
 	   System.out.println("worksheet founded from workbook");
 	   
@@ -69,30 +61,21 @@ public class AddCustomerTest extends TestBase
    }
    
    @Test(dataProvider="a")
-   public static void getData(String firstname,String lastname,String pcode,String alertmsg)
+   public static void getData(String customer,String currency)
    { 
-	   
-	   click("addCustomer");
-	  type("firstname_xpath",firstname);
-	  type("lastname_xpath",lastname);
-	   type( "postalcode_xpath",pcode);
-	  click("addCustomerSubmit");
-	  wait = new WebDriverWait(driver, 10);
-	  Alert alert = wait.until(ExpectedConditions.alertIsPresent());
-	  Assert.assertTrue(alert.getText().contains(alertmsg), "alert is not present");
-	   alert.accept();
-	
-	 System.out.println("Add customer button clicked");
-	 log.debug("add customer button clicked");
+	   System.out.println("enter data in open account page");
+	   log.debug("enter data in open account page");
+	   click("openAccount");
+	   select("customerDropdown_css",customer);
+	   select("currencyDropdown_css",currency);
+	   click("processSubmit");
+	  
 	 
-	 System.out.println("value of a : " + firstname + "   and " + " value of lastname : " + lastname  + " value of pcode : " + pcode + "   alertmsg : " + alertmsg);  
-	
+	 System.out.println("value of customer : " + customer + "   and " + " value of currency : " + currency);  
+	 log.debug("value of customer : " + customer + "   and " + " value of currency : " + currency);  
 	 
    }
 	 
   
 
-           
-          
-	
 }

@@ -1,6 +1,15 @@
-11:40:43,597 DEBUG devpinoyLogger<strong>{1}</strong>:54 - Config properties loaded
-11:40:43,609 DEBUG devpinoyLogger<strong>{1}</strong>:70 - Or properties loaded
-11:40:46,204 DEBUG devpinoyLogger<strong>{1}</strong>:82 - Chrome Browser Open
-11:40:48,863 DEBUG devpinoyLogger<strong>{1}</strong>:31 - file path added
-11:40:48,895 DEBUG devpinoyLogger<strong>{1}</strong>:25 - click method works
-11:40:50,120 DEBUG devpinoyLogger<strong>{1}</strong>:104 - browser closed
+12:09:48,549 DEBUG devpinoyLogger<strong>{1}</strong>:59 - Config properties loaded
+12:09:48,551 DEBUG devpinoyLogger<strong>{1}</strong>:75 - Or properties loaded
+12:09:51,127 DEBUG devpinoyLogger<strong>{1}</strong>:87 - Chrome Browser Open
+12:09:53,758 DEBUG devpinoyLogger<strong>{1}</strong>:25 - click method works
+12:09:53,802 DEBUG devpinoyLogger<strong>{1}</strong>:36 - file path added
+12:09:54,772 DEBUG devpinoyLogger<strong>{1}</strong>:86 - add customer button clicked
+12:09:54,795 DEBUG devpinoyLogger<strong>{1}</strong>:28 - file path added
+12:09:54,839 DEBUG devpinoyLogger<strong>{1}</strong>:67 - enter data in open account page
+12:10:35,005 DEBUG devpinoyLogger<strong>{1}</strong>:187 - "selecting the element"
+12:10:35,120 DEBUG devpinoyLogger<strong>{1}</strong>:187 - "selecting the element"
+12:10:35,180 DEBUG devpinoyLogger<strong>{1}</strong>:75 - value of customer : Manvir singh   and  value of currency : Dollar
+12:10:35,200 DEBUG devpinoyLogger<strong>{1}</strong>:58 - file path added
+12:10:35,307 DEBUG devpinoyLogger<strong>{1}</strong>:31 - home button clicked
+12:11:15,581 DEBUG devpinoyLogger<strong>{1}</strong>:187 - "selecting the element"
+12:14:36,293 DEBUG devpinoyLogger<strong>{1}</strong>:109 - browser closed

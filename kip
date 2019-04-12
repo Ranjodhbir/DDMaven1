@@ -1,0 +1,139 @@
+warning: LF will be replaced by CRLF in target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in target/surefire-reports/Surefire suite/Surefire test.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in target/surefire-reports/Surefire suite/Surefire test.xml.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in target/surefire-reports/index.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in target/surefire-reports/junitreports/TEST-testcases.AddCustomerTest.xml.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in target/surefire-reports/junitreports/TEST-testcases.LoginTest.xml.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in target/surefire-reports/junitreports/TEST-testcases.TestCase1.xml.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in target/surefire-reports/old/Surefire suite/classes.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in target/surefire-reports/old/Surefire suite/methods-alphabetical.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in target/surefire-reports/old/Surefire suite/methods-not-run.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in target/surefire-reports/old/Surefire suite/methods.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in target/surefire-reports/old/Surefire suite/toc.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in target/surefire-reports/old/index.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in test-output/Learning Test/AddCustomer Test.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in test-output/Learning Test/AddCustomer Test.xml.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in test-output/Learning Test/Login Test.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in test-output/Learning Test/Login Test.xml.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in test-output/index.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in test-output/junitreports/TEST-testcases.AddCustomerTest.xml.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in test-output/junitreports/TEST-testcases.LoginTest.xml.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in test-output/old/Learning Test/classes.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in test-output/old/Learning Test/methods-alphabetical.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in test-output/old/Learning Test/methods.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in test-output/old/Learning Test/toc.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in test-output/old/index.html.
+The file will have its original line endings in your working directory
+[1mdiff --git a/src/test/java/base/TestBase.java b/src/test/java/base/TestBase.java[m
+[1mindex 908c9e8..a12666a 100644[m
+[1m--- a/src/test/java/base/TestBase.java[m
+[1m+++ b/src/test/java/base/TestBase.java[m
+[36m@@ -11,8 +11,11 @@[m [mimport org.apache.log4j.PropertyConfigurator;[m
+ import org.openqa.selenium.By;[m
+ //import org.openqa.selenium.By;[m
+ import org.openqa.selenium.WebDriver;[m
+[32m+[m[32mimport org.openqa.selenium.WebElement;[m
+ import org.openqa.selenium.chrome.ChromeDriver;[m
+ import org.openqa.selenium.ie.InternetExplorerDriver;[m
+[32m+[m[32mimport org.openqa.selenium.support.ui.Select;[m
+[32m+[m[32mimport org.openqa.selenium.support.ui.WebDriverWait;[m
+ import org.testng.annotations.AfterSuite;[m
+ import org.testng.annotations.BeforeSuite;[m
+ [m
+[36m@@ -28,9 +31,10 @@[m [mpublic class TestBase {[m
+ 	public static FileInputStream fis;[m
+ 	public static Logger log = Logger.getLogger("devpinoyLogger");[m
+ 	public static MonitoringMail mail = new MonitoringMail();[m
+[31m-	public static WebDriver wait;[m
+[32m+[m	[32mpublic static WebDriverWait wait;[m
+ 	String log4jConfPath = "C:\\Users\\Ranjodhbir.Kaur\\eclipse-workspace\\DDMaven1\\src\\test\\resources\\properties\\log4j.properties";[m
+[31m-	public static FileInputStream fs;[m
+[32m+[m	[32mpublic static FileInputStream fs;[m[41m	[m
+[32m+[m	[32mpublic static WebElement drpdown;[m
+ [m
+ 	//PropertyConfigurator.configure(log4jConfPath);[m
+ 	[m
+[36m@@ -41,6 +45,7 @@[m [mpublic class TestBase {[m
+ 		System.out.println("setup method");[m
+ 		[m
+ 		PropertyConfigurator.configure(log4jConfPath);[m
+[32m+[m[41m		[m
+ 		if (driver == null) {[m
+ 			try {[m
+ 				fis = new FileInputStream([m
+[36m@@ -91,7 +96,7 @@[m [mpublic class TestBase {[m
+ 		driver.get(config.getProperty("testingurl"));[m
+         driver.manage().window().maximize();[m
+         //driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")), TimeUnit.SECONDS);[m
+[31m-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);[m
+[32m+[m[32m        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);[m
+ 		[m
+ 	}[m
+ }[m
+[36m@@ -110,20 +115,75 @@[m [mpublic class TestBase {[m
+ 	{[m
+ 		if(locator.endsWith("_xpath"))[m
+ 		{[m
+[31m-			driver.findElement(By.xpath(or.getProperty("signin_xpath")));[m
+[32m+[m			[32mdriver.findElement(By.xpath(or.getProperty("signin_xpath"))).click();;[m
+ [m
+ 		}[m
+ 		else if(locator.endsWith("_css"))[m
+ 		{[m
+[31m-			driver.findElement(By.xpath(or.getProperty("css")));[m
+[32m+[m			[32mdriver.findElement(By.xpath(or.getProperty("css"))).click();;[m
+[32m+[m		[32m}[m
+[32m+[m		[32melse if(locator.endsWith("Customer"))[m
+[32m+[m		[32m{[m
+[32m+[m			[32m driver.findElement(By.xpath(or.getProperty("addCustomer"))).click();[m
+[32m+[m		[32m}[m
+[32m+[m	[32m   else if(locator.equals("addCustomerSubmit"))[m
+[32m+[m		[32m{[m
+[32m+[m			[32mdriver.findElement(By.xpath(or.getProperty("addCustomerSubmit"))).click();[m
+[32m+[m		[32m}[m
+[32m+[m	[32m   else if(locator.equals("openAccount"))[m
+[32m+[m		[32m{[m
+[32m+[m			[32mdriver.findElement(By.xpath(or.getProperty("openAccount"))).click();[m
+[32m+[m		[32m}[m
+[32m+[m	[32m   else if(locator.equals("processSubmit"))[m
+[32m+[m		[32m{[m
+[32m+[m			[32mdriver.findElement(By.xpath(or.getProperty("processSubmit"))).click();[m
+ 		}[m
+[31m-		[m
+ 	}[m
+ 	[m
+ 	public static void type(String key,String value)[m
+ 	{[m
+[32m+[m		[32mif(key.endsWith("_xpath"))[m
+[32m+[m		[32m{[m
+[32m+[m			[32mdriver.findElement(By.xpath(or.getProperty(key))).sendKeys(value);[m
+[32m+[m		[32m}[m
+[32m+[m		[32melse if(key.endsWith("_css"))[m
+[32m+[m		[32m{[m
+[32m+[m			[32mdriver.findElement(By.cssSelector(or.getPropert

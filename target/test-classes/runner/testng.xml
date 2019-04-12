@@ -19,6 +19,21 @@
     </classes>
 	</test> <!-- Test -->
 	
+	  
+   <test name="openAccount Test">
+		<classes>
+			
+      		<class name="testcases.OpenAccount1Test" />
+      		
+		</classes>
+	</test> <!-- Test -->
 	
-
+	 <test name="CustomerLogin Test">
+		<classes>
+			
+      		<class name="testcases.CustomerLoginTest" />
+      		
+		</classes>
+	</test> <!-- Test -->
+	
 </suite> <!-- Suite -->
